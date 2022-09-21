@@ -14,7 +14,7 @@ Note that this example will create resources. Resources can be destroyed with `t
 ### main.tf
 ```hcl
 module "resource_pool" {
-  source  = "scotttyso/pools-resource/intersight"
+  source  = "terraform-cisco-modules/pools-resource/intersight"
   version = ">= 1.0.1"
 
   assignment_order   = "sequential"
