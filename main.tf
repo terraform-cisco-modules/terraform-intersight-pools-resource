@@ -28,7 +28,7 @@ data "intersight_compute_physical_summary" "servers" {
 # GUI Location: Pools > Create Pool > Resource Pool
 #____________________________________________________________
 
-resource "intersight_resourcepool_pool" "resource_pool" {
+resource "intersight_resourcepool_pool" "resource" {
   assignment_order = var.assignment_order
   description      = var.description != "" ? var.description : "${var.name} Resource Pool."
   name             = var.name
