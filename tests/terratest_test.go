@@ -53,7 +53,7 @@ func TestFull(t *testing.T) {
 	"Name":        "{{ .name }}",
 	"Description": "{{ .name }} Resource Pool.",
 	"PoolType": "Static",
-	"ResourceType": "Server",
+	"ResourceType": "Server"
   
 }
 `
