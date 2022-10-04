@@ -3,12 +3,17 @@ version: '>= 0.14.0'
 formatter: markdown table
 
 content: |-
+  [![Tests](https://github.com/terraform-cisco-modules/terraform-intersight-pools-resource/actions/workflows/terratest.yml/badge.svg)](https://github.com/terraform-cisco-modules/terraform-intersight-pools-resource/actions/workflows/terratest.yml)
   # Terraform Intersight Pools - Resource
   Manages Intersight Resource Pools
   
   Location in GUI:
   `Pools` » `Create Pool` » `Resource`
   
+  ## Easy IMM
+
+  [*Easy IMM - Comprehensive Example*](https://github.com/terraform-cisco-modules/easy-imm-comprehensive-example) - A comprehensive example for policies, pools, and profiles.
+
   ## Example
 
   ### main.tf

@@ -18,7 +18,7 @@ module "resource_pool" {
   version = ">= 1.0.2"
 
   assignment_order   = "sequential"
-  description        = "Demo Resource Pool"
+  description        = "default Resource Pool."
   name               = "default"
   organization       = "default"
   pool_type          = "Static"

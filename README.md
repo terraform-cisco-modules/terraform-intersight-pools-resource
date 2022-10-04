@@ -1,9 +1,14 @@
 <!-- BEGIN_TF_DOCS -->
+[![Tests](https://github.com/terraform-cisco-modules/terraform-intersight-pools-resource/actions/workflows/terratest.yml/badge.svg)](https://github.com/terraform-cisco-modules/terraform-intersight-pools-resource/actions/workflows/terratest.yml)
 # Terraform Intersight Pools - Resource
 Manages Intersight Resource Pools
 
 Location in GUI:
 `Pools` » `Create Pool` » `Resource`
+
+## Easy IMM
+
+[*Easy IMM - Comprehensive Example*](https://github.com/terraform-cisco-modules/easy-imm-comprehensive-example) - A comprehensive example for policies, pools, and profiles.
 
 ## Example
 
@@ -14,7 +19,7 @@ module "resource_pool" {
   version = ">= 1.0.2"
 
   assignment_order   = "sequential"
-  description        = "Demo Resource Pool"
+  description        = "default Resource Pool."
   name               = "default"
   organization       = "default"
   pool_type          = "Static"
