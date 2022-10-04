@@ -19,7 +19,7 @@ func TestFull(t *testing.T) {
 	// Generate a unique name for objects created in this test to ensure we don't
 	// have collisions with stale objects
 	uniqueId := random.UniqueId()
-	instanceName := fmt.Sprintf("test-pools-wwpn-%s", uniqueId)
+	instanceName := fmt.Sprintf("test-pools-resource-%s", uniqueId)
 
 	// Input variables for the TF module
 	vars := map[string]interface{}{
@@ -49,9 +49,10 @@ func TestFull(t *testing.T) {
 	// This is a Go template for the JSON object, so template variables can be used
 	expectedJSONTemplate := `
 {
-	"AssignmentOrder": "sequential",
 	"Name":        "{{ .name }}",
 	"Description": "{{ .name }} Resource Pool.",
+
+	"AssignmentOrder": "sequential",
 	"PoolType": "Static",
 	"ResourceType": "Server"
   
